@@ -1,0 +1,77 @@
+{
+  "name": "ai-spend",
+  "version": "0.1.0",
+  "description": "Track your LLM API costs with one line of code. Wraps OpenAI and Anthropic SDKs to automatically monitor token usage and spending.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "llm",
+    "openai",
+    "anthropic",
+    "claude",
+    "gpt",
+    "ai",
+    "cost",
+    "tracking",
+    "token",
+    "usage",
+    "spending",
+    "budget",
+    "monitoring",
+    "api-cost",
+    "llm-cost"
+  ],
+  "author": "nicepkg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicepkg/ai-spend.git"
+  },
+  "homepage": "https://github.com/nicepkg/ai-spend#readme",
+  "bugs": {
+    "url": "https://github.com/nicepkg/ai-spend/issues"
+  },
+  "peerDependencies": {
+    "openai": ">=4.0.0",
+    "@anthropic-ai/sdk": ">=0.20.0"
+  },
+  "peerDependenciesMeta": {
+    "openai": {
+      "optional": true
+    },
+    "@anthropic-ai/sdk": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0",
+    "openai": "^4.80.0",
+    "@anthropic-ai/sdk": "^0.39.0"
+  }
+}
