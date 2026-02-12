@@ -4,8 +4,15 @@ Track your LLM API costs with one line of code.
 
 Wraps OpenAI and Anthropic SDKs to automatically monitor token usage and spending — no proxy, no endpoint changes, no data leaves your machine.
 
-```
+```bash
+# npm (once published)
 npm install ai-spend
+
+# From GitHub Release
+npm install https://github.com/nicepkg/ai-spend/releases/download/v0.1.0/ai-spend-0.1.0.tgz
+
+# From GitHub (latest)
+npm install github:nicepkg/ai-spend
 ```
 
 ## Why
